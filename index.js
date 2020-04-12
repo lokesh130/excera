@@ -18,7 +18,7 @@ const courses = [
 
 //routes section
 app.get('/',(req,res)=>{
-  res.send("hello world");
+  res.sendFile("index.html");
 });
 
 app.get('/api/courses',(req,res)=>{
