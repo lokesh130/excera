@@ -9,12 +9,249 @@
     crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
     crossorigin="anonymous">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="./css/style.css">
   <title>Bootstrap Theme</title>
 </head>
 
 <body>
-  <!-- START HERE -->
+  <div class="container">
+    <!-- header -->
+    <header id="main-header">
+      <div class="row no-gutters">
+        <div class="col-sm-3">
+          <img src="img/loki.jpg" alt="">
+        </div>
+        <div class="col-sm-9">
+          <div class="d-flex flex-column">
+            <div class="p-5 bg-dark text-white d-flex flex-row justify-content-between align-items-center">
+              <h1>Lokesh Kumar</h1>
+              <a href="http://twitter.com">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="http://facebook.com">
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a href="http://instagram.com">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="http://github.com">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+            <div class="d-flex justify-content-center bg-black text-white">
+              <h5>An Avid Programmer</h5>
+            </div>
+            <div class="d-flex flex-row text-white text-center">
+              <div class="k p-4 bg-primary" data-toggle="collapse"
+              data-target="#home">
+                <i class="fas fa-home fa-2x d-block"></i>
+                <span class="d-none d-sm-block">Home</span>
+              </div>
+              <div class="k p-4 bg-success" data-toggle="collapse"
+              data-target="#resume">
+                <i class="fas fa-graduation-cap fa-2x d-block"></i>
+                <span class="d-none d-sm-block">Resume</span>
+              </div>
+              <div class="k p-4 bg-warning" data-toggle="collapse"
+              data-target="#work">
+                <i class="fas fa-folder fa-2x d-block"></i>
+                <span class="d-none d-sm-block">Work</span>
+              </div>
+              <div class="k p-4 bg-danger" data-toggle="collapse"
+              data-target="#contact">
+                <i class="fas fa-envelope fa-2x d-block"></i>
+                <span class="d-none d-sm-block">Contact</span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- home -->
+    <div id="home" class="collapse show">
+      <div class="p-4 bg-primary text-white">
+        <h2>Summary</h2>
+        <p class="lead pt-3">Solutions-driven programmer with a
+          strong working knowledge of algorithms and data structures.</p>
+      </div>
+
+      <div class="pt-3 px-3">
+        <h2>My skills</h2>
+        <hr>
+        <h4>c++</h4>
+        <div class="progress">
+          <div class="progress-bar bg-success" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+
+        <hr>
+        <h4>python</h4>
+        <div class="progress">
+          <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+
+        <hr>
+        <h4>javascript</h4>
+        <div class="progress">
+          <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+
+        <hr>
+        <h4>java</h4>
+        <div class="progress">
+          <div class="progress-bar bg-danger" role="progressbar" style="width: 25%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <hr>
+        <br>
+      </div>
+    </div>
+
+    <!-- resume -->
+    <div id="resume" class="collapse ">
+      <div class="p-4 bg-success text-white">
+        <h2>My Resume</h2>
+        <p class="lead pt-3">Solutions-driven programmer with a
+          strong working knowledge of algorithms and data structures.</p>
+      </div>
+
+      <hr>
+      <h2>My Grades</h2>
+      <hr>
+      <br>
+
+      <div class="card-deck justify-content-center">
+        <div class="card border-success mb-3" style="max-width: 18rem;">
+          <div class="card-header bg-transparent border-success">10th</div>
+            <div class="card-body text-success">
+              <h5 class="card-title">Bal Bhavan Public School</h5>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"><u>Year Of Passing</u>  2015</li>
+              </ul>
+            </div>
+          <div class="card-footer bg-transparent border-success">CGPA : 10</div>
+        </div>
+        <div class="card border-warning mb-3" style="max-width: 18rem;">
+          <div class="card-header bg-transparent border-warning">12th</div>
+            <div class="card-body text-warning">
+              <h5 class="card-title">Bal Bhavan Public School</h5>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"><u>Year Of Passing</u>  2017</li>
+              </ul>
+            </div>
+          <div class="card-footer bg-transparent border-warning">Percentage : 94.4</div>
+        </div>
+        <div class="card border-danger mb-3" style="max-width: 18rem;">
+          <div class="card-header bg-transparent border-danger">Graduation</div>
+            <div class="card-body text-danger">
+              <h5 class="card-title">Netaji Subhash University Of Technology</h5>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"><u>Year Of Passing</u>  2021</li>
+              </ul>
+            </div>
+          <div class="card-footer bg-transparent border-danger">CGPA : 8.71</div>
+        </div>
+      </div>
+      <hr>
+      <br>
+    </div>
+
+    <!-- work -->
+    <div id="work" class="collapse">
+      <div class="p-4 bg-warning text-white">
+        <h2>My Works</h2>
+        <p class="lead pt-3">Solutions-driven programmer with a
+          strong working knowledge of algorithms and data structures.</p>
+      </div>
+
+      <br>
+      <h2>What I have done</h2>
+      <br>
+      <div class="d-flex">
+        <div>
+          <a href="https://cdn.urldecoder.org/assets/images/url-fb.png" data-toggle="lightbox">
+            <img src="img/loki.jpg" class="img-fluid">
+          </a>
+        </div>
+        <div>
+          <a href="https://cdn.urldecoder.org/assets/images/url-fb.png" data-toggle="lightbox">
+            <img src="img/loki.jpg" class="img-fluid">
+          </a>
+        </div>
+        <div>
+          <a href="https://cdn.urldecoder.org/assets/images/url-fb.png" data-toggle="lightbox">
+            <img src="img/loki.jpg" class="img-fluid">
+          </a>
+        </div>
+      </div>
+      <hr>
+      <br>
+
+    </div>
+
+    <div id="contact" class="collapse">
+      <div class="p-4 bg-danger text-white">
+        <h2>Contact me</h2>
+        <p class="lead pt-3">Solutions-driven programmer with a
+          strong working knowledge of algorithms and data structures.</p>
+      </div>
+      <br>
+      <hr>
+      <br>
+
+      <form>
+        <div class="form-group">
+          <div class="input-group input-group-lg">
+            <div class="input-group-prepend">
+              <span class="input-group-text bg-danger text-white">
+                <i class="fas fa-user"></i>
+              </span>
+            </div>
+            <input type="text" class="form-control bg-dark text-white" placeholder="Name">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="input-group input-group-lg">
+            <div class="input-group-prepend">
+              <span class="input-group-text bg-danger text-white">
+                <i class="fas fa-envelope"></i>
+              </span>
+            </div>
+            <input type="email" class="form-control bg-dark text-white" placeholder="Email">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="input-group input-group-lg">
+            <div class="input-group-prepend">
+              <span class="input-group-text bg-danger text-white">
+                <i class="fas fa-pencil-alt"></i>
+              </span>
+            </div>
+            <textarea class="form-control bg-dark text-white" placeholder="Content"></textarea>
+          </div>
+        </div>
+
+        <input type="submit" value="Submit" class="btn btn-danger btn-block btn-lg">
+      </form>
+      <br>
+      <hr>
+      <br>
+    </div>
+
+
+    <!-- footer -->
+    <footer id="main-footer" class="p-5 bg-dark text-white">
+      <div class="row">
+        <div class="col-md-6">
+          <a href="#" class="btn btn-outline-light">
+            <i class="fas fa-cloud"></i> Download Resume
+          </a>
+        </div>
+      </div>
+    </footer>
+  </div>
 
 
   <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -23,10 +260,17 @@
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
     crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
 
   <script>
-    // Get the current year for the copyright
-    $('#year').text(new Date().getFullYear());
+    $('.k').click(function(){
+      $('.collapse').collapse('hide');
+    });
+
+    $(document).on('click','[data-toggle="lightbox"]',function(e){
+      e.preventDefault();
+      $(this).ekkoLightbox();
+    });
   </script>
 </body>
 
