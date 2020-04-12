@@ -18,7 +18,7 @@ const courses = [
 
 //routes section
 app.get('/',(req,res)=>{
-  res.sendFile(path.join(__dirname, 'index.html'));
+  res.sendFile('index.html' , { root : __dirname});  
 });
 
 app.get('/api/courses',(req,res)=>{
