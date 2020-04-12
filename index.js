@@ -6,7 +6,7 @@ require('./startup/prod')(app);
 
 //middlewares
 app.use(express.json());
-
+app.use(express.static(front_end));
 
 //database
 const courses = [
@@ -18,7 +18,7 @@ const courses = [
 
 //routes section
 app.get('/',(req,res)=>{
-  res.sendFile('index.html' , { root : __dirname});  
+  res.sendFile('front_end/index.html' , { root : __dirname});
 });
 
 app.get('/api/courses',(req,res)=>{
