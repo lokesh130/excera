@@ -6,7 +6,7 @@ require('./startup/prod')(app);
 
 //middlewares
 app.use(express.json());
-app.use(express.static(front_end));
+app.use(express.static("./front_end"));
 
 //database
 const courses = [
